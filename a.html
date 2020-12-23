@@ -17,7 +17,13 @@
 	</a>
 	<br>
 	<hr>
-	<button onclick="ga('send', 'event', '某按鈕（類別）', '點擊（動作）', '點擊了（標籤）','100');" id="loginMember" class="btn btn-primary">Button</button>
+	<button onclick="ga('send',{
+    hitType: 'event',
+    eventCategory: '點擊', 
+    eventAction: '已點擊', 
+    eventLabel: '標記'
+    eventValue: '200' 
+  })">Button</button>
 
 </body>
 </html>
